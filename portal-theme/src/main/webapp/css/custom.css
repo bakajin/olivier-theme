@@ -7,8 +7,8 @@
 /* ---------- Base styles ---------- */
 
 body {
-	background: #EEF0F2;
-	font-size: 11px;
+	background: #f3f3f3;
+	font : 16px "Trebuchet MS", sans-serif;
 }
 
 a {
@@ -28,7 +28,9 @@ hr, .separator {
 }
 
 #wrapper {
-	background: none;
+	background: #fff;
+	box-shadow: 10px 10px 35px #888888;
+	
 	margin: 0 auto;
 	max-width: 90%;
 	min-width: 960px;
@@ -40,7 +42,7 @@ hr, .separator {
 }
 
 #banner {
-	background: none;
+	background: #FFFFFF;
 	height: auto;
 }
 
@@ -52,6 +54,67 @@ hr, .separator {
 
 body #banner .logo a {
 	float: left;
+}
+
+/* banner header logo portlet webcontent */
+#tiny-logo {
+	position : absolute;
+	margin-right : 3%;
+	right : 0px;
+	top : 10px;
+}
+#tag-line {
+	position : absolute;
+	margin-left : 3%;
+	top : -5px;
+}
+#first-tag-line {
+	color : #3791c5; 
+	font-size: 1.875em;
+	font-weight : 400;
+	letter-spacing : 0.1em;
+	margin : 0 0 24px 30px;
+}
+
+#second-tag-line {
+	color:#3791c5;
+	font-size: 3.75em;
+	font-weight : 500;
+	letter-spacing : 0.1em;
+	margin : 0 0 24px 30px;
+}
+
+#third-tag-line {
+	color : #3791c5; 
+	font-size: 1.125em;
+	margin : 0 0 28px 30px;
+	letter-spacing : 0.1em;
+}
+
+#comments {
+	position : relative;
+	font-size : 0.75em;
+	font-weight : bold;
+	display : block;
+	width : 670px;
+	margin : 52px 0 0 6%;
+}
+
+#signed {
+	float : right;
+	position : relative;
+	font-size : 0.75em;
+	font-weight : normal;
+	display : block;
+	margin : 0 20% 0 150px;
+}
+
+#tiny-photo {
+	border : 3px solid #ECECEC;
+	border-radius : 3pt;
+	position : absolute;
+	right : 86px;
+	bottom : 35px;
 }
 
 .current-community {
@@ -221,19 +284,29 @@ body #banner .logo a {
 }
 
 .portlet-topper {
-	background: #D4D4D4 url(../images/portlet/header_bg.png) repeat-x 0 0;
-	border: 1px solid;
-	border-color: #C8C9CA #9E9E9E #9E9E9E #C8C9CA;
-	font-size: 1.1em;
+	background: #5aa4ce; /* Old browsers */
+	background: -moz-linear-gradient(top,  #5aa4ce 0%, #397fa8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5aa4ce), color-stop(100%,#397fa8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #5aa4ce 0%,#397fa8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #5aa4ce 0%,#397fa8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #5aa4ce 0%,#397fa8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #5aa4ce 0%,#397fa8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aa4ce', endColorstr='#397fa8',GradientType=0 ); /* IE6-9 */
+
+	border-radius : 0px;
+	border-top : 1px solid;
+	border-color : #9DC9E2;
 }
 
 .portlet-title {
-	color: #222;
+	color: #FFF;
 	float: none;
-	font-weight: bold;
+	font-size: 1.125em;
+	font-weight: 600; /* bold;*/
 	min-width: 50%;
-	padding: 5px;
-	text-shadow: 1px 1px #FFF;
+	padding: 3px 0px 3px 15px;
+	min-height : 1em;
+	
 }
 
 .lfr-portlet-title-editable {
@@ -275,6 +348,221 @@ body #banner .logo a {
 .ie6 .portlet-topper {
 	zoom: 1;
 }
+
+/* carroussel portlet webcontent */
+
+div.slides-wrap {
+	width : 100%;
+	height : 356px;
+}
+.slidesjs-container {
+	margin : 12px 0px;
+}
+
+#portlet_56_INSTANCE_4Mlc img {
+	vertical-align:text-top;
+}
+
+#portlet_56_INSTANCE_4Mlc .portlet-content {
+	padding : 0 0 0 0;
+}
+.slide-threes ul {
+	margin : 2px 0 0 0;
+	float : right;
+	list-style-type: none;
+	width : 65%;
+}
+
+.slide-twos ul {
+	margin : 2px 0 0 0;
+	float : right;
+	list-style-type: none;
+	width : 77%;
+}
+#portlet_56_INSTANCE_4Mlc h1 {
+	margin : 0;
+	display : inline-block;
+	font-size : 10pt;
+	font-weight : normal;
+}
+#portlet_56_INSTANCE_4Mlc header h1.portlet-title {
+	font-size : 1.125em;
+	font-weight : bold;
+}
+#portlet_56_INSTANCE_4Mlc h2 {
+	margin : 0;
+	font-size : 10pt;
+	color : #91b6c8;
+	font-weight : normal;
+}
+
+#portlet_56_INSTANCE_4Mlc p {
+	margin : 0;
+	font-size : 8pt;
+	color : #67a9cf;
+}
+
+#portlet_56_INSTANCE_4Mlc .slidesjs-control {
+	width : 940px !important;
+	margin : 0 auto;
+
+}
+.slide-threes {
+	height : 105px;
+	background-color : #ececec;
+	margin : 0 3px;
+	padding : 10px;
+	width : 30%;
+	display : inline-block;
+	border-radius : 1em;
+	overflow : hidden;
+}
+
+.slide-twos {
+	background-color : #ececec;
+	margin : 0 5px;
+	padding : 15px;
+	width : 45%;
+	display : inline-block;
+	border-radius : 1em;
+	overflow : hidden;
+}
+
+/* SlidesJS Optional: mainly design */
+
+    #slides,
+    #slides2,
+    #slides3 {
+      display: none;
+      margin-bottom:5px;
+    }
+
+    .slidesjs-navigation {
+	margin-top : -99px;
+    }
+
+    .slidesjs-pagination {
+	margin: 6px 45%;
+	list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    a.slidesjs-next,
+    a.slidesjs-previous,
+    a.slidesjs-play,
+    a.slidesjs-stop {
+      background-image: url(/image/image_gallery?uuid=023667d5-b968-4a66-b28e-184e2d7a4f53&groupId=10156&t=1392584746632);
+      background-repeat: no-repeat;
+      display:block;
+      width:24px;
+      height:36px;
+      overflow: hidden;
+      text-indent: -9999px;
+     /* float: left;
+      margin-right:5px; */
+    }
+a.slidesjs-play {
+	display : none;
+}
+    .slidesjs-previous {
+	margin-left: 1px;
+	float: left;
+	position : relative;
+	z-index : 998;
+    }
+
+    .slidesjs-next {
+	background-position : -25px 0px;
+	margin-right: 1px;
+	float: right;
+	position : relative;
+	z-index : 998;
+    }
+
+a.slidesjs-next:hover, a.slidesjs-previous:hover,  {
+	background-position : -25px -25px;
+
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 26px;
+      height: 0;
+      padding-top: 26px;
+      background-image: url(/image/image_gallery?uuid=c27bb5a1-b953-405d-add9-f98d05a298f0&groupId=10156&t=1392584746625);
+      background-position: 0 -2px;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -26px;
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -50px;
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333;
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020;
+    }
+
+    .navbar {
+      overflow: hidden;
+    }
+  /* End SlidesJS Optional */
+
+  /* SlidesJS Required: These styles are required if you'd like a responsive slideshow */
+ 
+    #slides {
+      display: none;
+    }
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 960px;
+	height : 140px;
+      }
+    }
+  /* SlidesJS Required: end */
+
 
 /* ---------- Footer ---------- */
 
