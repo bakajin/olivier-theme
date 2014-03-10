@@ -53,12 +53,12 @@ hr, .separator {
 }
 
 body #banner .logo a {
-	//float: right;
+	float: right;
 }
 
 /* banner header logo portlet webcontent */
 #banner ul li {
-	display : inline;
+	display : inline-block;
 	list-style-type: none;
 }
 
@@ -146,12 +146,14 @@ body #banner .logo a {
 }
 
 #sign-in {
+	/*
 	background: url(../images/common/key.png) no-repeat 3px 50%;
 	font-weight: bold;
 	padding: 5px 5px 5px 25px;
 	position: absolute;
 	right: 0;
 	top: 1.4em;
+	*/
 }
 
 .guest-community .logo .current-community {
