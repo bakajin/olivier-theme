@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-#parse ($init)
+	#parse ($init)
 
 <html class="#language("lang.dir")" dir="#language("lang.dir")" lang="$w3c_language_id">
 
@@ -12,14 +12,16 @@
 
 <body class="$css_class">
 
-#if($is_signed_in)
-	#dockbar()
-#end
+	#if($is_signed_in)
+		#dockbar()
+	#end
 
 <div id="wrapper">
 	<a href="#main-content" id="skip-to-content">#language("skip-to-content")</a>
 
 	<header id="banner" role="banner">
+		#parse ("$full_templates_path/service_menu.vm")
+
 		<hgroup id="heading">
 			<h1 class="company-title">
 				<a class="logo" href="$company_url" title="#language("go-to") $company_name">
@@ -38,18 +40,10 @@
 			</h3>
 		</hgroup>
 
-		#if(!$is_signed_in)
-			<a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
-		#end
-
 		#if ($update_available_url)
 			<div class="popup-alert-notice">
 				<a class="update-available" href="$update_available_url">#language("updates-are-available-for-liferay")</a>
 			</div>
-		#end
-
-		#if ($has_navigation)
-			#parse ("$full_templates_path/navigation.vm")
 		#end
 	</header>
 
@@ -82,6 +76,6 @@
 
 </body>
 
-$theme.include($bottom_include)
+	$theme.include($bottom_include)
 
 </html>

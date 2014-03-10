@@ -1,0 +1,30 @@
+<ul>
+	#if($is_signed_in)
+		<li><a href="$my_account_url" title="login">Welcome, $user_first_name $user_last_name </a></li>
+		<li>
+			<div id="page-sign">
+				<a href="$sign_out_url" title="Sign out">Sign out</a>
+			</div>
+		</li>
+	#else
+		#set ($create_account_url = $portletURLFactory.create($request, "58", $page.getPlid(), "ACTION_PHASE"))
+		$create_account_url.setWindowState("maximized")
+		$create_account_url.setPortletMode("view")
+		$create_account_url.setParameter("saveLastPath", "0")
+		$create_account_url.setParameter("struts_action", "/login/create_account")
+		<li>
+			<a href="$create_account_url" title="">Registreren</a>
+		</li>
+		</li>
+		<li>
+			<div id="page-sign">
+				<a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
+			</div>
+		</li>
+	#end
+	<li>
+		<div id="page-search">
+			$theme.search()
+		</div>
+	</li>
+</ul>
