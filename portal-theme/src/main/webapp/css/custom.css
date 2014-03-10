@@ -27,6 +27,10 @@ hr, .separator {
 	border-width: 1px 0;
 }
 
+input[type="text"], input[type="password"]{
+	background-image : none; 
+}
+
 #wrapper {
 	background: #fff;
 	box-shadow: 10px 10px 35px #888888;
@@ -48,7 +52,7 @@ hr, .separator {
 
 #banner .company-title {
 	float: none;
-	margin: 15px 0 0;
+	margin: 0;
 	position: static;
 }
 
@@ -57,6 +61,11 @@ body #banner .logo a {
 }
 
 /* banner header logo portlet webcontent */
+#banner ul {
+	float : right;
+	margin : 0;
+}
+
 #banner ul li {
 	display : inline-block;
 	list-style-type: none;
@@ -66,7 +75,7 @@ body #banner .logo a {
 	position : absolute;
 	margin-right : 3%;
 	right : 0px;
-	top : 10px;
+	top : 50px;
 }
 
 #tag-line {
