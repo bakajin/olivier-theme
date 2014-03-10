@@ -53,16 +53,22 @@ hr, .separator {
 }
 
 body #banner .logo a {
-	float: left;
+	//float: right;
 }
 
 /* banner header logo portlet webcontent */
-#tiny-logo {
+#banner ul li {
+	display : inline;
+	list-style-type: none;
+}
+
+.client-logo {
 	position : absolute;
 	margin-right : 3%;
 	right : 0px;
 	top : 10px;
 }
+
 #tag-line {
 	position : absolute;
 	margin-left : 3%;
