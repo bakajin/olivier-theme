@@ -75,5 +75,10 @@
 </body>
 
 	$theme.include($bottom_include)
-
+	<!-- SlidesJS Required: Link to jquery.slides.js -->
+	<script src="js/jquery.slides.js"></script>
+	<!-- End SlidesJS Required -->
+	  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  	<script src="js/oss-deltares-slides.js"></script>
+  <!-- End SlidesJS Required -->
 </html>
