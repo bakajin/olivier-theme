@@ -51,7 +51,7 @@
 	<div class="slides">
 		<div class="slide-threes">
 			#foreach( $slide in $titleSlide.getSiblings())
-				#if($slide.data !="")
+				#if($titleSlide.data !="")
 					#if($slide.image.dat !="")
 						<img alt="" height="91" src="$slide.image.data" width="91"/>
 					#end
