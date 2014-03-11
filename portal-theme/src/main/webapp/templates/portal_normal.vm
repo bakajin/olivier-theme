@@ -22,7 +22,9 @@
 	<header id="banner" role="banner">
 		#parse ("$full_templates_path/service_menu.vm")
 
-		<hgroup id="heading">
+		<img src="$images_folder/deltares-tiny-logo.jpg" class="client-logo" />
+
+		<hgroup id="heading">	
 			<h1 class="company-title">
 				<a class="logo" href="$company_url" title="#language("go-to") $company_name">
 					<span>$company_name</span>
