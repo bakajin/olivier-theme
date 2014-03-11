@@ -1,0 +1,18 @@
+#set ($webContentTitle = "Quote Header")
+#set ($webContentURLTitle = $stringUtil.replace($stringUtil.lowerCase("$webContentTitle"),' ','-'))
+#set ($journalArticleLocalService = $serviceLocator.findService("com.liferay.portlet.journal.service.JournalArticleLocalService"))
+#set ($groupId =$themeDisplay.getScopeGroupId())
+#set ($journalArticle = $journalArticleLocalService.getLatestArticleByUrlTitle($groupId,$webContentURLTitle, 0))
+#if ($journalArticle)
+	#set ($VOID = $velocityPortletPreferences.setValue('portlet-setup-show-borders', 'false'))
+	#set ($VOID = $velocityPortletPreferences.setValue('display-style', '1'))
+	#set ($VOID = $velocityPortletPreferences.setValue('groupId', $groupId.toString()))
+	#set ($VOID = $velocityPortletPreferences.setValue('articleId', $journalArticle.getArticleId().toString()))
+#end
+$journalArticle
+##portlet nomenclature
+#set ($portlet_id = '56')
+#set ($instance_id = 'E3j7')
+
+$journalContentUtil.getContent()
+#set ($my_portlet_id = "${portlet_id}_INSTANCE_${instance_id}")$taglibLiferay.runtime($my_portlet_id, '', $velocityPortletPreferences.toString())$velocityPortletPreferences.reset()
