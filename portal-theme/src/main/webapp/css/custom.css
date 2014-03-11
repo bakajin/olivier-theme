@@ -27,6 +27,10 @@ hr, .separator {
 	border-width: 1px 0;
 }
 
+input[type="text"], input[type="password"]{
+	background-image : none; 
+}
+
 #wrapper {
 	background: #fff;
 	box-shadow: 10px 10px 35px #888888;
@@ -44,29 +48,58 @@ hr, .separator {
 #banner {
 	background: #FFFFFF;
 	height: auto;
+	padding : 10px 0px 10px 20px;
 }
 
 #banner .company-title {
 	float: none;
-	margin: 15px 0 0;
+	margin: 0;
 	position: static;
 }
 
 body #banner .logo a {
-	//float: right;
+	/*float: right;*/
 }
 
 /* banner header logo portlet webcontent */
+#banner ul {
+	float : right;
+	margin : 0;
+}
+
 #banner ul li {
-	display : inline;
+	display : inline-block;
 	list-style-type: none;
+}
+
+#banner ul li a{
+	font-size: 0.875em;
+	color: #000000;
+	text-decoration: none;
+}
+
+#banner ul li a:hover{
+	text-decoration: underline;
+	color: : #333333;
+}
+
+#banner ul li input[type="text"] {
+	font : 14px "Trebuchet MS", sans-serif;
+	padding : 1px;
+	box-shadow: 0px 0px 8px #CCC inset;
+	width : 140px;
+	height : 20px;
+}
+
+#banner .logo {
+	margin : 20px 0 0 0;
 }
 
 .client-logo {
 	position : absolute;
 	margin-right : 3%;
 	right : 0px;
-	top : 10px;
+	top : 50px;
 }
 
 #tag-line {
@@ -146,12 +179,14 @@ body #banner .logo a {
 }
 
 #sign-in {
+	/*
 	background: url(../images/common/key.png) no-repeat 3px 50%;
 	font-weight: bold;
 	padding: 5px 5px 5px 25px;
 	position: absolute;
 	right: 0;
 	top: 1.4em;
+	*/
 }
 
 .guest-community .logo .current-community {
