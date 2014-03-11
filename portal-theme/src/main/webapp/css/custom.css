@@ -95,6 +95,22 @@ body #banner .logo a {
 	margin : 20px 0 0 0;
 }
 
+#banner #quote div {
+	font-size: 0.75em;
+	font-weight: bold;
+}
+
+#banner #quote img {
+	float : right;
+	border : solid 3px #CCC;
+	margin-right: 75px;
+}
+
+#banner #quote div:last-child {
+	float : right;
+	font-weight : normal;
+}	
+
 .client-logo {
 	position : absolute;
 	margin-right : 3%;
@@ -608,8 +624,29 @@ a.slidesjs-next:hover, a.slidesjs-previous:hover,  {
 /* ---------- Footer ---------- */
 
 #footer {
-	text-align: right;
+	
 }
+
+#footer ul {
+	display : inline-block;
+	margin-left : 15%;
+}
+#footer li {
+	list-style-type: none;
+	font-size: 0.75em;
+	font-weight: bold;
+	color: #a3a3a3;
+}
+#footer li a {
+	text-decoration: none;
+	font-weight: normal;
+	color: #a3a3a3;
+}
+
+#footer li a:hover {
+	text-decoration: underline;
+	
+}	
 
 /* ---------- Hudcrumbs ---------- */
 

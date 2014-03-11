@@ -67,6 +67,7 @@
 	</div>
 
 	<footer id="footer" role="contentinfo">
+		<hr />
 		#parse ("$full_templates_path/footer.vm")
 	</footer>
 </div>
