@@ -1,0 +1,11 @@
+#set ($webContentTitle = "Footer")
+#set ($webContentURLTitle = $stringUtil.replace($stringUtil.lowerCase("$webContentTitle"),' ','-'))
+#set ($journalArticleLocalService = $serviceLocator.findService("com.liferay.portlet.journal.service.JournalArticleLocalService"))
+#set ($journalArticle = $journalArticleLocalService.getLatestArticleByUrlTitle($themeDisplay.getScopeGroupId(),$webContentURLTitle, 0))
+#if ($journalArticle)
+###display quote
+	#set ($footerArticleId = $journalArticle.getArticleId().toString())
+	#set ($contextGroupId = $themeDisplay.getScopeGroupId().toString())
+	#set ($footer_includes =    $journalContentUtil.getContent($getterUtil.getLong("$contextGroupId"), "$footerArticleId", "", "view", "en", $themeDisplay))
+	$footer_includes
+#end
