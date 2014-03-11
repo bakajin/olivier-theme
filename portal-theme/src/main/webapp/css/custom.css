@@ -95,6 +95,9 @@ body #banner .logo a {
 	margin : 20px 0 0 0;
 }
 
+#banner #quote {
+	margin : 1em 0 0 1em;
+}
 #banner #quote div {
 	font-size: 0.75em;
 	font-weight: bold;
@@ -624,12 +627,13 @@ a.slidesjs-next:hover, a.slidesjs-previous:hover,  {
 /* ---------- Footer ---------- */
 
 #footer {
-	padding : 5%;	
+	padding : 0 5%;	
 }
 
 #footer ul {
 	display : inline-block;
 	margin-left : 15%;
+	vertical-align: top;
 }
 #footer li {
 	list-style-type: none;
