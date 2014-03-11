@@ -24,7 +24,7 @@
 	#end
 	<li>
 		<div id="page-search">
-			$theme.search()
+			$theme.journalContentSearch()
 		</div>
 	</li>
 </ul>
