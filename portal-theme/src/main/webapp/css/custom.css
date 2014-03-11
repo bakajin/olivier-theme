@@ -48,6 +48,7 @@ input[type="text"], input[type="password"]{
 #banner {
 	background: #FFFFFF;
 	height: auto;
+	padding : 10px 0px 10px 20px;
 }
 
 #banner .company-title {
@@ -57,7 +58,7 @@ input[type="text"], input[type="password"]{
 }
 
 body #banner .logo a {
-	float: right;
+	/*float: right;*/
 }
 
 /* banner header logo portlet webcontent */
@@ -69,6 +70,20 @@ body #banner .logo a {
 #banner ul li {
 	display : inline-block;
 	list-style-type: none;
+}
+
+#banner ul li a{
+	font-size: 0.875em;
+	color: #000000;
+}
+
+#banner ul li input[type="text"] {
+	display : inline-block;
+	list-style-type: none;
+}
+
+#banner .logo {
+	margin : 20px 0 0 0;
 }
 
 .client-logo {
