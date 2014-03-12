@@ -1,0 +1,8 @@
+<root>
+  <dynamic-element name='titleSlide' type='text' index-type='' repeatable='true'>
+    <dynamic-element name='image' type='image' index-type='' repeatable='false'></dynamic-element>
+    <dynamic-element name='link' type='text' index-type='' repeatable='false'></dynamic-element>
+    <dynamic-element name='subtitleSlide' type='text' index-type='' repeatable='false'></dynamic-element>
+    <dynamic-element name='description' type='text_box' index-type='' repeatable='false'></dynamic-element>
+  </dynamic-element>
+</root>
