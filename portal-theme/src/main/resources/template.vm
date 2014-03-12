@@ -2,7 +2,7 @@
 	<!-- SlidesJS Required: Start Slides -->
 	<!-- The container is used to define the width of the slideshow -->
 	<div class="container">
-		<div id="slides-opensource">
+		<div id="slides-$reserved-article-title.getData()">
 			<div class="slides">
 				#foreach ($title in $slidetitle.getSiblings())
 					<!-- Slide begin -->
