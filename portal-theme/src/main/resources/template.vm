@@ -5,7 +5,7 @@
 		<div id="slides-$reserved-article-title.getData()">
 			<div class="slides">
 				#foreach ($title in $slidetitle.getSiblings())
-					<!-- Slide begin -->
+					<!-- Slide $velocityCount begin -->
 					<div class="slide-threes">
 						<img alt="$title.getData()" height="91"
 						     src="$title.getChild('slideimage').getData()"
@@ -16,7 +16,11 @@
 							<li><p>$title.getChild('slidedescription').getData()</p></li>
 						</ul>
 					</div>
-					<!-- Slide end -->
+					<!-- Slide $velocityCount end -->
+					#if( $velocityCount % 3 == 0 )
+					</div>
+					<div class="slides">
+					#end
 				#end
 			</div>
 		</div>
