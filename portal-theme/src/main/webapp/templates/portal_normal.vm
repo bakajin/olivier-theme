@@ -22,9 +22,9 @@
 	<header id="banner" role="banner">
 		#parse ("$full_templates_path/service_menu.vm")
 
-		<img src="$images_folder/deltares-tiny-logo.jpg" class="client-logo" />
+		<img src="$images_folder/deltares-tiny-logo.jpg" class="client-logo"/>
 
-		<hgroup id="heading">	
+		<hgroup id="heading">
 			<h1 class="company-title">
 				<a class="logo" href="$company_url" title="#language("go-to") $company_name">
 					<span>$company_name</span>
@@ -67,7 +67,7 @@
 	</div>
 
 	<footer id="footer" role="contentinfo">
-		<hr />
+		<hr/>
 		#parse ("$full_templates_path/footer.vm")
 	</footer>
 </div>
@@ -75,10 +75,7 @@
 </body>
 
 	$theme.include($bottom_include)
-	<!-- SlidesJS Required: Link to jquery.slides.js -->
-	<script src="js/jquery.slides.js"></script>
-	<!-- End SlidesJS Required -->
-	  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
-  	<script src="js/oss-deltares-slides.js"></script>
-  <!-- End SlidesJS Required -->
+<!-- SlidesJS Required: Link to jquery.slides.js -->
+<script src="$javascript_folder/jquery.slides.js"></script>
+<!-- End SlidesJS Required -->
 </html>
