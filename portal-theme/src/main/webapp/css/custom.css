@@ -46,7 +46,7 @@ input[type="text"], input[type="password"] {
 #banner {
     background: #FFFFFF;
     height: auto;
-    padding: 10px 0px 10px 20px;
+    padding: 10px 0 10px 20px;
 }
 
 #banner .company-title {
@@ -78,13 +78,13 @@ body #banner .logo a {
 
 #banner ul li a:hover {
     text-decoration: underline;
-    color: : #333333;
+    color: #333333;
 }
 
 #banner ul li input[type="text"] {
     font: 14px "Trebuchet MS", sans-serif;
     padding: 1px;
-    box-shadow: 0px 0px 8px #CCC inset;
+    box-shadow: 0 0 8px #CCC inset;
     width: 140px;
     height: 20px;
 }
@@ -116,7 +116,7 @@ body #banner .logo a {
 .client-logo {
     position: absolute;
     margin-right: 3%;
-    right: 0px;
+    right: 0;
     top: 50px;
 }
 
@@ -364,7 +364,7 @@ body #banner .logo a {
     font-size: 1.125em;
     font-weight: 600; /* bold;*/
     min-width: 50%;
-    padding: 3px 0px 3px 15px;
+    padding: 3px 0 3px 15px;
     min-height: 1em;
 
 }
@@ -417,7 +417,7 @@ div.slides-wrap {
 }
 
 .slidesjs-container {
-    margin: 12px 0px;
+    margin: 12px 0;
 }
 
 #portlet_56_INSTANCE_4Mlc img {
@@ -544,14 +544,14 @@ a.slidesjs-play {
 }
 
 .slidesjs-next {
-    background-position: -25px 0px;
+    background-position: -25px 0;
     margin-right: 1px;
     float: right;
     position: relative;
     z-index: 998;
 }
 
-a.slidesjs-next:hover, a.slidesjs-previous:hover, {
+a.slidesjs-next:hover, a.slidesjs-previous:hover{
     background-position: -25px -25px;
 
 }
