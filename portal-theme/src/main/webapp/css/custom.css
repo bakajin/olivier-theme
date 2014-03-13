@@ -78,7 +78,7 @@ body #banner .logo a {
 
 #banner ul li a:hover {
     text-decoration: underline;
-    color: : #333333;
+    color : #333333;
 }
 
 #banner ul li input[type="text"] {
