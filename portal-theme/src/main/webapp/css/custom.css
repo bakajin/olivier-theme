@@ -413,7 +413,7 @@ body #banner .logo a {
     zoom: 1;
 }
 
-/* carroussel portlet webcontent */
+/* slidejs portlet webcontent */
 
 div.slides-wrap {
     width: 100%;
@@ -424,7 +424,7 @@ div.slides-wrap {
     margin: 12px 0;
 }
 
-#portlet_56_INSTANCE_4Mlc img {
+.slide-threes img, .slide-twos img {
     vertical-align: text-top;
 }
 
@@ -446,7 +446,7 @@ div.slides-wrap {
     width: 77%;
 }
 
-#portlet_56_INSTANCE_4Mlc h1 {
+.slide-threes h1, .slide-twos h1 {
     margin: 0;
     display: inline-block;
     font-size: 10pt;
@@ -458,20 +458,20 @@ div.slides-wrap {
     font-weight: bold;
 }
 
-#portlet_56_INSTANCE_4Mlc h2 {
+.slide-threes h2, .slide-twos h2 {
     margin: 0;
     font-size: 10pt;
     color: #91b6c8;
     font-weight: normal;
 }
 
-#portlet_56_INSTANCE_4Mlc p {
+.slide-threes p, .slide-twos p {
     margin: 0;
     font-size: 8pt;
     color: #67a9cf;
 }
 
-#portlet_56_INSTANCE_4Mlc .slidesjs-control {
+.slidesjs-control {
     width: 940px !important;
     margin: 0 auto;
 
