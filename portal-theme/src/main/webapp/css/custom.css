@@ -95,6 +95,25 @@ body #banner .logo a {
 	margin : 20px 0 0 0;
 }
 
+#banner #quote {
+	margin : 1em 0 0 1em;
+}
+#banner #quote div {
+	font-size: 0.75em;
+	font-weight: bold;
+}
+
+#banner #quote img {
+	float : right;
+	border : solid 3px #CCC;
+	margin-right: 75px;
+}
+
+#banner #quote div:last-child {
+	float : right;
+	font-weight : normal;
+}	
+
 .client-logo {
 	position : absolute;
 	margin-right : 3%;
@@ -496,7 +515,7 @@ div.slides-wrap {
     a.slidesjs-previous,
     a.slidesjs-play,
     a.slidesjs-stop {
-      background-image: url(/image/image_gallery?uuid=023667d5-b968-4a66-b28e-184e2d7a4f53&groupId=10156&t=1392584746632);
+      background-image: url(/images/btns-next-prev-2.png);
       background-repeat: no-repeat;
       display:block;
       width:24px;
@@ -534,7 +553,7 @@ a.slidesjs-next:hover, a.slidesjs-previous:hover,  {
       width: 26px;
       height: 0;
       padding-top: 26px;
-      background-image: url(/image/image_gallery?uuid=c27bb5a1-b953-405d-add9-f98d05a298f0&groupId=10156&t=1392584746625);
+      background-image: url(/images/pagination.png);
       background-position: 0 -2px;
       float: left;
       overflow: hidden;
@@ -608,8 +627,30 @@ a.slidesjs-next:hover, a.slidesjs-previous:hover,  {
 /* ---------- Footer ---------- */
 
 #footer {
-	text-align: right;
+	padding : 0 5%;	
 }
+
+#footer ul {
+	display : inline-block;
+	margin-left : 15%;
+	vertical-align: top;
+}
+#footer li {
+	list-style-type: none;
+	font-size: 0.75em;
+	font-weight: bold;
+	color: #a3a3a3;
+}
+#footer li a {
+	text-decoration: none;
+	font-weight: normal;
+	color: #a3a3a3;
+}
+
+#footer li a:hover {
+	text-decoration: underline;
+	
+}	
 
 /* ---------- Hudcrumbs ---------- */
 
